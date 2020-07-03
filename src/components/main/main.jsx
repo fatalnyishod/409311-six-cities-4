@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ApartList from './apart-list/apart-list.jsx';
+import ApartList from '../apart-list/apart-list.jsx';
 
 
 const Main = (props) => {
