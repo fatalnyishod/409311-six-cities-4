@@ -90,7 +90,9 @@ exports[`apart-card component snap correct render 1`] = `
       className="place-card__name"
     >
       <a
+        className="place-card__name-link"
         href="#"
+        onClick={[MockFunction]}
       >
         title
       </a>

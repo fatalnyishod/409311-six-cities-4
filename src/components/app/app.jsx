@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Main from '../main/main.jsx';
 
+const handleTitleClick = () => {};
+
 const App = (props) => {
   const {apartCount, apartTitles} = props;
 
@@ -9,6 +11,7 @@ const App = (props) => {
     <Main
       apartCount={apartCount}
       apartTitles={apartTitles}
+      handleTitleClick={handleTitleClick}
     />
   );
 };

@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import ApartCard from "../apart-card/apart-card.jsx";
 
 const ApartList = (props) => {
-  const {titles} = props;
+  const {titles, handleTitleClick} = props;
+
   return (
     <div className="cities__places-list places__list tabs__content">
       {
@@ -11,6 +12,7 @@ const ApartList = (props) => {
           <ApartCard
             key={item + index}
             title={item}
+            handleOnTitleClick={handleTitleClick}
           />
         ))
       }
@@ -19,7 +21,8 @@ const ApartList = (props) => {
 };
 
 ApartList.propTypes = {
-  titles: PropTypes.arrayOf(PropTypes.string).isRequired
+  titles: PropTypes.arrayOf(PropTypes.string).isRequired,
+  handleTitleClick: PropTypes.func.isRequired
 };
 
 export default ApartList;
